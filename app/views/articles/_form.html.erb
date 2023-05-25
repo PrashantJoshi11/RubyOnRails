@@ -11,7 +11,8 @@
       <%= form.label :body %><br>
       <%= form.text_area :body %><br>
       <% article.errors.full_messages_for(:body).each do |message| %>
-        <div><%= message %></div>
+        <div><%= message %><bin/rails generate model Comment commenter:string body:text article:references
+/div>
       <% end %>
     </div>
   
